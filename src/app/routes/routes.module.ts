@@ -7,6 +7,8 @@ import { UserModule } from './user/user.module';
 
 import { menu } from './menu';
 import { routes } from './routes';
+import { UpvoteComponent } from './upvote/upvote.component';
+import { DownvoteComponent } from './downvote/downvote.component';
 
 
 @NgModule({
@@ -15,8 +17,10 @@ import { routes } from './routes';
         RouterModule.forRoot(routes),
         UserModule
     ],
-    declarations: [],
+    declarations: [UpvoteComponent, DownvoteComponent],
     exports: [
+        UpvoteComponent,
+        DownvoteComponent,
         RouterModule
     ]
 })

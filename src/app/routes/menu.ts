@@ -11,6 +11,20 @@ const Dashboard = {
     order: 1
 };
 
+const Upvote = {
+    name: 'Upvote',
+    link: '/upvote',
+    iconclass: 'ion-android-star-outline',
+    order: 2
+};
+
+const Downvote = {
+    name: 'Downvote',
+    link: '/downvote',
+    iconclass: 'ion-close-round',
+    order: 2
+};
+
 const KanbanBoard = {
     name: 'Kanban Board',
     link: '/kanban',
@@ -255,6 +269,8 @@ const Pages = {
 export const menu = [
     headingMenu,
     Dashboard,
+    Upvote,
+    Downvote,
     KanbanBoard,
     Widgets,
     headingComponents,

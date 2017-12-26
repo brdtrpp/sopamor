@@ -6,6 +6,8 @@ import { LockComponent } from './user/lock/lock.component';
 import { RecoverComponent } from './user/recover/recover.component';
 import { Signinv2Component } from './user/signinv2/signinv2.component';
 import { Signupv2Component } from './user/signupv2/signupv2.component';
+import { UpvoteComponent } from './upvote/upvote.component';
+import { DownvoteComponent } from './downvote/downvote.component';
 
 export const routes = [
 
@@ -23,7 +25,11 @@ export const routes = [
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
             { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
             { path: 'maps', loadChildren: './maps/maps.module#MapsModule' },
-            { path: 'pages', loadChildren: './pages/pages.module#PagesModule' }
+            { path: 'pages', loadChildren: './pages/pages.module#PagesModule' },
+
+            //customer paths
+            { path: 'upvote', component: UpvoteComponent},
+            { path: 'downvote', component: DownvoteComponent},
 
         ]
     },
