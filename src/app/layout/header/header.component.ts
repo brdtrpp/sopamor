@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ModalDirective } from 'ngx-bootstrap';
+import Web3 = require("web3");
 
 import { SettingsService } from '../../shared/settings/settings.service';
 import { PagetitleService } from '../../core/pagetitle/pagetitle.service';

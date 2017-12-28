@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PagetitleService } from '../../core/pagetitle/pagetitle.service';
 
 @Component({
   selector: 'app-upvote',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpvoteComponent implements OnInit {
 
-  constructor() { }
+  constructor(pt: PagetitleService) {
+    pt.setTitle('Upvote');
+  }
 
   ngOnInit() {
   }

@@ -10,10 +10,12 @@ export class PagetitleService {
     constructor() {}
 
     setTitle(newTitle: string) {
+      // console.log(newTitle);
         this.page.title = newTitle;
     }
 
     getTitle(): string {
+      // console.log(this);
         return this.page.title;
     }
 
